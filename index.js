@@ -25,8 +25,8 @@ async function requestPokemon(pokemon) {
 async function newPokemon(e) {
   e.preventDefault();
   const search = search_pokemon.value.toLowerCase();
+  id = Number(search);
   if (search > 649 || search < 1) return;
-  id = search;
   const newPokemon = await requestPokemon(search);
   actual_pokemon.src =
     newPokemon.sprites.versions["generation-v"][
@@ -67,4 +67,3 @@ form_pokemon.addEventListener("submit", newPokemon);
 //Adicionando o evento ao botão
 prev.addEventListener("click", next_prev);
 next.addEventListener("click", next_prev);
-
