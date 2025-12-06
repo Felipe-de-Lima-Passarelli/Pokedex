@@ -48,6 +48,7 @@ Bem-vindo ao projeto **Pokedéx Interativa**, um catálogo de Pokémon que utili
 └───img/
         imagens ou ícones (opcional)
 │   LICENSE
+│   README.md
 │   index.html
 │   index.js
 │   style.css
